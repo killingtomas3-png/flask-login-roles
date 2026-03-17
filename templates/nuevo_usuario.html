@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 {% extends "base.html" %}
 {% block content %}
-  <h2>Login</h2>
+  <h2>Nuevo Usuario</h2>
   <form method="post" class="card p-4">
     <div class="mb-3">
       <label>Usuario</label>
@@ -11,6 +11,14 @@
       <label>Contraseña</label>
       <input type="password" name="password" class="form-control" required>
     </div>
-    <button type="submit" class="btn btn-primary">Entrar</button>
+    <div class="mb-3">
+      <label>Rol</label>
+      <select name="role" class="form-select">
+        <option value="user">User</option>
+        <option value="editor">Editor</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Crear</button>
   </form>
 {% endblock %}

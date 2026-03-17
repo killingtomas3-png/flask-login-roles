@@ -1,6 +1,8 @@
-{% extends "layout.html" %}
-{% block title %}Editor{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% extends "base.html" %}
 {% block content %}
-<h1>Zona de edición</h1>
-<p>Bienvenido, {{ session.get('usuario') }}. Tenés permisos de editor.</p>
+  <div class="card p-4">
+    <h2>Panel del Editor</h2>
+    <p>Aquí podés gestionar contenido.</p>
+  </div>
 {% endblock %}
