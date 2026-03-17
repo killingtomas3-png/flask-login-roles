@@ -1,6 +1,6 @@
 #  My Flask App with Glass UI
 
-A modern web application built with **Flask**, featuring authentication, role-based access (admin, editor, user), a complete user CRUD, and a stylish **glassmorphism + animations** design ✨.
+A modern web application built with **Flask**, featuring authentication, role-based access (admin, editor, user), a complete user CRUD, and a stylish **glassmorphism + animations** design .
 
 ---
 
@@ -55,7 +55,7 @@ The app will run at:
 
 #  Mi App Flask con Glass UI
 
-Una aplicación web hecha en **Flask** con autenticación, roles (admin, editor, user), CRUD de usuarios y un diseño moderno estilo **glass + animaciones** ✨.
+Una aplicación web hecha en **Flask** con autenticación, roles (admin, editor, user), CRUD de usuarios y un diseño moderno estilo **glass + animaciones** .
 
 ---
 
