@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: #f8f8f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav a {
+    color: #89b4fa;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.flashes {
+    list-style: none;
+    padding: 0;
+}
+.flashes li.success { color: green; font-weight: bold; }
+.flashes li.error { color: red; font-weight: bold; }
+.flashes li.info { color: blue; font-style: italic; }
+
+.flashes {
+    list-style: none;
+    padding: 0;
+}
+.flashes li.success {
+    color: green;
+    font-weight: bold;
+}
+.flashes li.error {
+    color: red;
+    font-weight: bold;
+}
+.flashes li.info {
+    color: blue;
+    font-style: italic;
+}
+.flashes li.success { color: green; font-weight: bold; }
+.flashes li.error { color: red; font-weight: bold; }
+.flashes li.info { color: blue; font-style: italic; }

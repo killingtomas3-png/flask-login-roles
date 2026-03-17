@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Dashboard</h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<p>Panel con estadísticas o información privada.</p>
+{% endblock %}
+@app.route("/dashboard")
+def dashboard():
+    if "usuario" in session and session.get("role") == "admin":
+        return render_template("dashboard.html", title="Dashboard")
+    flash("Acceso denegado. Solo administradores.", "error")
+    return redirect(url_for("index"))
+

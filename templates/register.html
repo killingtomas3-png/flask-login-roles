@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta charset="UTF-8">
+    <title>Mi primera página</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+    <form method="POST" action="/register">
+        <input type="text" name="username" placeholder="Usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Registrarme</button>
+    </form>
+</body>
+</html>
+cursor.execute(
+    "INSERT INTO usuarios (username, password, role) VALUES (?, ?, ?)",
+    (usuario, generate_password_hash(contraseña), "user")
+)

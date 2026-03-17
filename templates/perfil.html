@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Perfil</h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<p>Bienvenido a tu perfil, {{ session['usuario'] }}!</p>
+{% endblock %}
